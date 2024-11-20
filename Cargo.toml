@@ -1,0 +1,16 @@
+[package]
+name = "local_s3"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-config = { version = "1", features = ["behavior-version-latest"] }
+aws-credential-types = { version = "1", features = ["hardcoded-credentials"] }
+aws-sdk-s3 = "1"
+bytes = "1"
+futures = "0.3"
+hyper = "1"
+hyper-util = { version = "0.1", features = ["tokio", "server", "http1"] }
+s3s = "0.10"
+s3s-fs = "0.10"
+tokio = { version = "1", features = ["rt-multi-thread"] }
